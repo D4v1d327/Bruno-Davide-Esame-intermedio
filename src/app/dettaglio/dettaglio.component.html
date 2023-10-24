@@ -10,34 +10,35 @@
   
   <h1 class="text-center">DETTAGLIO DRINK</h1>
 
-  <a [routerLink]="['/home']">HOME</a>
-
+  
 <ul>
  
-    <li *ngFor="let drinks of drinks" > 
-  <div class="container"> 
-    <div class="row"> 
-      <div class="col-lg-6"> 
-        <img class="img-fluid" [src]="drinks.strDrinkThumb"/> <br>
-      </div>  
+ <li  *ngFor="let drinks of drinks" > 
+    <div class="container"> 
+        <div class="row"> 
+            <div class="col-lg-6"> 
+              <img class="img-fluid" [src]="drinks.strDrinkThumb"/> <br>
+            </div>  
+            <div class="col-lg-6 text-center"> 
+            <h2 class="text-center orange">    {{drinks.idDrink}} <br>
+                {{drinks.strDrink}} <br> </h2> 
+                
+              <ul>  <h3 class="m-3 orange"> INGREDIENTI</h3>
+                  <li>  {{drinks.strIngredient1}} </li> 
+                  <li>  {{drinks.strIngredient2}} </li>
+                  <li>  {{drinks.strIngredient3}} </li>
+                  <li>  {{drinks.strIngredient4}} </li>
+              </ul>
+              CATEGORIA: {{drinks.strCategory}} <br>
+              BICCHIERE: {{drinks.strGlass}} <br>
+              <h3 class="m-3 orange"> ISTRUZIONI </h3>
+                {{drinks.strInstructionsIT}} <br> <br>
 
-      <div class="col-lg-6"> 
-        {{drinks.idDrink}} <br>
-        {{drinks.strDrink}} <br>
-        
-       <ul>  <h3> INGREDIENTI</h3>
-          <li>  {{drinks.strIngredient1}} </li> 
-          <li>  {{drinks.strIngredient2}} </li>
-          <li>  {{drinks.strIngredient3}} </li>
-          <li>  {{drinks.strIngredient4}} </li>
-       </ul>
-        {{drinks.strCategory}} <br>
-        {{drinks.strGlass}} <br>
-        {{drinks.strInstructionsIT}} <br>
+                <a [routerLink]="['/home']" class="button-style mt-5">TORNA ALL'ELENCO DEI DRINK</a>
 
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
   </li>
 </ul>
   

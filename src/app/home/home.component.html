@@ -3,10 +3,10 @@
 <div class="container-fluid bg-black"> 
   <h1 class="orange text-center"> ELENCO DRINK PER LETTERA A</h1>
 
-  <ul class="row">
+  <ul class="row ">
       <li *ngFor="let drinks of drinks" class="linea testo-giustificato text-center col-lg-3 "> 
 
-          <div class="card " style="width: 18rem;"  routerLink ="/dettaglio">
+          <div class="card mouse-click" style="width: 18rem;"  routerLink ="/dettaglio">
               <img  class="card-img-top" [src]="drinks.strDrinkThumb"/>
               <div class="card-body">
                 <h3 class="card-text">ID DRINK: {{drinks.idDrink}}</h3>
