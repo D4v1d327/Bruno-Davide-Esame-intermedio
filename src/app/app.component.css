@@ -9,6 +9,11 @@ ul {
     background-color: darkorange;
  }
 
+ i{
+
+    font-size: 20px;
+ }
+
 .linea{
     padding: 1rem;
     border-bottom: 3px solid  orange;

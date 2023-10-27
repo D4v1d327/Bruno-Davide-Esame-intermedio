@@ -8,39 +8,43 @@
 </head>
 <body>
   
-  <h1 class="text-center">DETTAGLIO DRINK</h1>
+  
 
   
-<ul>
- 
- <li  *ngFor="let drinks of drinks" > 
-    <div class="container"> 
-        <div class="row"> 
-            <div class="col-lg-6"> 
-              <img class="img-fluid" [src]="drinks.strDrinkThumb"/> <br>
-            </div>  
-            <div class="col-lg-6 text-center"> 
-            <h2 class="text-center orange">    {{drinks.idDrink}} <br>
-                {{drinks.strDrink}} <br> </h2> 
-                
-              <ul>  <h3 class="m-3 orange"> INGREDIENTI</h3>
-                  <li>  {{drinks.strIngredient1}} </li> 
-                  <li>  {{drinks.strIngredient2}} </li>
-                  <li>  {{drinks.strIngredient3}} </li>
-                  <li>  {{drinks.strIngredient4}} </li>
-              </ul>
-              CATEGORIA: {{drinks.strCategory}} <br>
-              BICCHIERE: {{drinks.strGlass}} <br>
-              <h3 class="m-3 orange"> ISTRUZIONI </h3>
-                {{drinks.strInstructionsIT}} <br> <br>
-
-                <a [routerLink]="['/home']" class="button-style mt-5">TORNA ALL'ELENCO DEI DRINK</a>
-
+  <ul>
+    <li *ngFor="let drink of drinks">
+      <div class="container-fluid">
+        
+        <div class="row">
+          <div class="col-lg-6 d-flex align-items-center">
+            <div class="p-4">
+              <img class="img-fluid mb-3" [src]="drink.strDrinkThumb" />
             </div>
+          </div>
+          <div class="col-lg-6 d-flex align-items-center text-center">
+            <div class="text-center"> 
+              <h1 class="text-center">DETTAGLIO DRINK {{drink.strDrink}}</h1>
+                <h2 class="text-center orange"> <br>{{drink.strDrink}} <br></h2>
+                <ul>
+                  <h3 class="m-3 orange"> INGREDIENTI</h3>
+                  <li> {{drink.strIngredient1}} </li>
+                  <li> {{drink.strIngredient2}} </li>
+                  <li> {{drink.strIngredient3}} </li>
+                  <li> {{drink.strIngredient4}} </li>
+                </ul>
+                CATEGORIA: {{drink.strCategory}} <br>
+                BICCHIERE: {{drink.strGlass}} <br>
+                <h3 class="m-3 orange"> ISTRUZIONI </h3>
+                {{drink.strInstructionsIT}} <br> <br>
+    
+                <a [routerLink]="['/home']" class="button-style mt-5">TORNA ALL'ELENCO DEI DRINK</a>
+            </div>
+          </div>
         </div>
-    </div>
-  </li>
-</ul>
+      </div>
+    </li>
+  </ul>
+  
   
 </body>
 </html>
