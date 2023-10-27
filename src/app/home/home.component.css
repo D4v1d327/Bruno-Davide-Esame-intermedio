@@ -6,6 +6,12 @@ ul {
     text-decoration: none;  
 }
 
+
+ul, li, div {
+    margin: 0;
+    padding: 0;
+  }
+
 .mouse-click {
     cursor: pointer;
   }

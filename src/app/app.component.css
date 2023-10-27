@@ -2,6 +2,12 @@
 ul {
     color: orange;
  }
+ 
+ footer{
+
+    height: 80px;
+    background-color: darkorange;
+ }
 
 .linea{
     padding: 1rem;
@@ -14,11 +20,13 @@ ul {
     font-size: 40px;
 }
 
+.navBg{
+
+    background-color: darkorange;
+}
+
 .testo-giustificato{
     text-align: justify;
-}
-.linea-finale{
-    border-bottom: 30px solid orange;
 }
 .bg-orange{
     background-color: orange;
