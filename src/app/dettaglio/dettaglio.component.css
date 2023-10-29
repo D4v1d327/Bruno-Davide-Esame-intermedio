@@ -2,8 +2,6 @@ li {
     list-style: none;
   }
 
-
-
  a{
     text-decoration: none;  
 }
@@ -12,36 +10,15 @@ body{
 
     background-color:blueviolet;
 }
-
 ul, li, div {
     margin: 0;
     padding: 0;
-  }
-
-.mouse-click {
-    cursor: pointer;
-  }
-  
-
-.linea{
-    padding: 1rem;
-    border-bottom: 3px solid  orange;
-}
-
+  }  
 .orange{
 
     color: orange;
     font-size: 30px;
 }
-
-.testo-giustificato{
-    text-align: justify;
-}
-
-.bg-orange{
-    background-color: orange;
-}
-
 
 .button-style{
     border-radius: 20px;
@@ -50,10 +27,6 @@ ul, li, div {
     border: 2px solid white;
 }
 
-.m-top{
-
-    margin-top: 200px;
-}
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that

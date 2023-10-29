@@ -27,11 +27,6 @@ ul, li, div {
     color: orange;
     font-size: 30px;
 }
-
-.testo-giustificato{
-    text-align: justify;
-}
-
 .bg-orange{
     background-color: orange;
 }
